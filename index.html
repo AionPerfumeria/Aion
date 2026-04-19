@@ -777,13 +777,24 @@
     "AT10":      { discount: 10, type: "percent", description: "10% de descuento" },
     "DT10":      { discount: 10, type: "percent", description: "10% de descuento" },
     "DOSH10":    { discount: 10, type: "percent", description: "10% de descuento" },
-    "HAMMSYK":   { discount: 10, type: "percent", description: "10% de descuento" },
-    "AION15X":   { discount: 1, type: "percent", description: "1% de descuento" },
-    "LAUNCH20X": { discount: 2, type: "percent", description: "2% lanzamiento" },
-    "VERANO50X": { discount: 5, type: "fixed",   description: "$5 MXN de descuento" },
+    "AION15X":   { discount: 15, type: "percent", description: "15% de descuento" },
+    "LAUNCH20X": { discount: 20, type: "percent", description: "20% lanzamiento" },
+    "VERANO50X": { discount: 50, type: "fixed",   description: "$50 MXN de descuento" },
   };
 
   const PRODUCT_OPTIONS = [
+    { volume: '30ml',  concentration: 'Sensación Aura (Extrait de Parfum 33%)',  conc: '33', price: 188 },
+    { volume: '30ml',  concentration: 'Impacto Radiante (Elixir 42%)',           conc: '42', price: 232 },
+    { volume: '30ml',  concentration: 'Aura Intensa (Elixir 50%)',               conc: '50', price: 277 },
+    { volume: '60ml',  concentration: 'Sensación Aura (Extrait de Parfum 33%)',  conc: '33', price: 321 },
+    { volume: '60ml',  concentration: 'Impacto Radiante (Elixir 42%)',           conc: '42', price: 410 },
+    { volume: '60ml',  concentration: 'Aura Intensa (Elixir 50%)',               conc: '50', price: 488 },
+    { volume: '100ml', concentration: 'Sensación Aura (Extrait de Parfum 33%)',  conc: '33', price: 432 },
+    { volume: '100ml', concentration: 'Impacto Radiante (Elixir 42%)',           conc: '42', price: 554 },
+    { volume: '100ml', concentration: 'Aura Intensa (Elixir 50%)',               conc: '50', price: 654 },
+  ];
+
+  const AROMAS = [
   {"code": "BCP0001", "name": "BLUE SURF", "brand": "BOD MAN", "occasion": "Verano, casual, playa", "family": "Acuática Aromática"},
   {"code": "BCP0002", "name": "NEW YORK SEDUCTIVE", "brand": "CREACIONES IGUAZU", "occasion": "Noche, salidas, citas", "family": "Amaderada Aromática"},
   {"code": "BCP0003", "name": "DARK ICE", "brand": "CREACIONES IGUAZU", "occasion": "Casual, salidas", "family": "Aromática Amaderada"},
@@ -2780,12 +2791,6 @@
   {"code": "VBODY0002", "name": "BODY MANGO SENSATION", "brand": "ABSOLUTO A", "occasion": "Uso corporal, casual, verano", "family": "Frutal Tropical"},
   {"code": "VBODY0003", "name": "BODY COTTON CANDY", "brand": "ABSOLUTO A", "occasion": "Uso corporal, casual", "family": "Gourmand Dulce"},
   {"code": "VBODY0004", "name": "BODY AMOR VIP", "brand": "ABSOLUTO A", "occasion": "Uso corporal, casual, citas", "family": "Floral Oriental"},
-  {"code": "VBODY0005", "name": "BODY AGUA TURQUESA VIP", "brand": "ABSOLUTO A", "occasion": "Uso corporal, casual, verano", "family": "Acuática Floral"},
-  {"code": "C0001", "name": "1 MILLION", "brand": "PACO RABANNE", "occasion": "Salidas nocturnas, citas", "family": "Oriental Especiada"}
-];
-
-  const AROMAS = [
-  {"code": "BCP0001", "name": "BLUE SURF", "brand": "BOD MAN", "occasion": "Verano, casual, playa", "family": "Acuática Aromática"},
   {"code": "VBODY0005", "name": "BODY AGUA TURQUESA VIP", "brand": "ABSOLUTO A", "occasion": "Uso corporal, casual, verano", "family": "Acuática Floral"},
   {"code": "C0001", "name": "1 MILLION", "brand": "PACO RABANNE", "occasion": "Salidas nocturnas, citas", "family": "Oriental Especiada"}
 ];
