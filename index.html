@@ -642,8 +642,8 @@
 .cart-fab {
   position: fixed;
   top: 70px;
-  bottom: auto;
   right: 20px;
+  bottom: auto;
   z-index: 190;
   background: var(--dark);
   color: white;
@@ -655,28 +655,21 @@
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
-  cursor: grab;
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 10px;
   box-shadow: 0 6px 24px rgba(0,0,0,0.2);
-  transition: background 0.2s, opacity 0.2s, box-shadow 0.2s;
+  transition: opacity 0.2s, background 0.2s;
   opacity: 0;
   pointer-events: none;
-  user-select: none;
-  touch-action: none;
 }
 .cart-fab.visible {
   opacity: 1;
   pointer-events: auto;
 }
-.cart-fab.dragging {
-  cursor: grabbing;
-  box-shadow: 0 14px 40px rgba(0,0,0,0.32);
-  transition: box-shadow 0.15s;
-}
 .cart-fab:hover { background: #333; box-shadow: 0 10px 30px rgba(0,0,0,0.22); }
-.cart-fab:active { background: #222; }
+.cart-fab:active { transform: scale(0.97); }
 .cart-fab-count {
   background: var(--gold);
   color: white;
@@ -691,16 +684,14 @@
   padding: 0 5px;
   letter-spacing: 0;
 }
-/* Pulso al añadir item */
 .cart-fab.pulse {
   animation: fabPulse 0.4s ease;
 }
 @keyframes fabPulse {
   0%   { transform: scale(1); }
-  40%  { transform: scale(1.08); }
+  40%  { transform: scale(1.06); }
   100% { transform: scale(1); }
 }
- 
   /* ── ACTION BUTTONS (fondo) ── */
   .action-buttons {
     position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
