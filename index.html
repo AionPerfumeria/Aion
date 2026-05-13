@@ -643,7 +643,6 @@
   position: fixed;
   top: 70px;
   right: 20px;
-  bottom: auto;
   z-index: 190;
   background: var(--dark);
   color: white;
@@ -660,15 +659,17 @@
   align-items: center;
   gap: 10px;
   box-shadow: 0 6px 24px rgba(0,0,0,0.2);
-  transition: opacity 0.2s, background 0.2s;
+  transition: opacity 0.3s ease, background 0.2s;
   opacity: 0;
   pointer-events: none;
+  width: fit-content;
+  height: auto;
 }
 .cart-fab.visible {
   opacity: 1;
   pointer-events: auto;
 }
-.cart-fab:hover { background: #333; box-shadow: 0 10px 30px rgba(0,0,0,0.22); }
+.cart-fab:hover { background: #333; }
 .cart-fab:active { transform: scale(0.97); }
 .cart-fab-count {
   background: var(--gold);
@@ -689,7 +690,7 @@
 }
 @keyframes fabPulse {
   0%   { transform: scale(1); }
-  40%  { transform: scale(1.06); }
+  40%  { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
   /* ── ACTION BUTTONS (fondo) ── */
