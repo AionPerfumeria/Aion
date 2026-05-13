@@ -1070,7 +1070,7 @@
 <div id="tour-anchor-actions" style="height:1px; margin-bottom: 80px;"></div>
  
 <!-- FAB del carrito -->
-<button class="cart-fab" id="cart-fab" aria-label="Ver carrito">
+<button class="cart-fab" id="cart-fab" onclick="openCart()" ontouchend="event.preventDefault(); openCart();" aria-label="Ver carrito">
   🛒 Ver Carrito
   <span class="cart-fab-count" id="cart-fab-count">0</span>
 </button>
